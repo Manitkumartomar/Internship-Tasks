@@ -51,6 +51,7 @@ public class InsertEmployeeData {
 						if (id == -1) {
 							break;
 						}
+						scanner.nextLine();
 						System.out.print("Name (String): ");
 						String name = scanner.next();
 						System.out.print("Age: ");
