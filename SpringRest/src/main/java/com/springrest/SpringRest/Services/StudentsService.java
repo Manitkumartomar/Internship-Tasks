@@ -2,6 +2,7 @@ package com.springrest.SpringRest.Services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import javax.management.ServiceNotFoundException; // Imported exception class
 
@@ -27,6 +28,16 @@ public class StudentsService {
     // Method to add a new student
     public void addStudents(Students students) {
         studentsRepo.save(students); // Save the new student
+    }
+
+    // Method to get student by student id
+    public Optional<Students> getStudentById(int id) throws ServiceNotFoundException{
+        try {
+            Optional<Students> student = studentsRepo.findById(id);;
+            return student;
+        } catch (Exception e) {
+           throw new ServiceNotFoundException("Student not found with id: "+ id);
+        }   
     }
 
     // Method to update a student by ID

@@ -1,6 +1,8 @@
 package com.springrest.SpringRest.Controller;
 
+import java.security.Principal;
 import java.util.List;
+import java.util.Optional;
 
 import javax.management.ServiceNotFoundException;// Imported exception class
 
@@ -38,6 +40,17 @@ public class StudentsController {
         return new ResponseEntity<>(students, HttpStatus.OK); // Return students with OK status
     }
 
+    // Mapping for getting student by id
+    @GetMapping("/students/{id}")
+    public ResponseEntity<Students> getStudentById(@PathVariable int id) throws ServiceNotFoundException {
+        Optional<Students> studentsOptional = services.getStudentById(id);// Retrieve student with the given id       
+        if (studentsOptional.isPresent()) {
+            return new ResponseEntity<>(studentsOptional.get(), HttpStatus.OK);// Return student with OK status
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+    
     // Mapping for adding a new student
     @PostMapping("/students")
     @ResponseStatus(HttpStatus.CREATED) // Set HTTP status code to 201 (Created)
@@ -65,6 +78,11 @@ public class StudentsController {
         } catch (ServiceNotFoundException ex) { // Catch exception if student not found
             return ResponseEntity.notFound().build(); // Return not found status
         }
+    }
+
+    @GetMapping("/current-user")
+    public String getLoggedInUser(Principal principal){
+        return principal.getName();
     }
 
     // Exception handling for StudentNotFoundException
