@@ -5,8 +5,6 @@ import java.util.List;
 import com.accountservice.bank.entities.external.Transaction;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
@@ -26,7 +24,6 @@ import lombok.Setter;
 public class Account {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;
     private Long userId;
     private String accountNo;

@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+// Class representing an API response
 @Getter
 @Setter
 @AllArgsConstructor
@@ -15,7 +16,7 @@ import lombok.Setter;
 @Builder
 public class ApiResponse {
 
-    private String message;
-    private boolean success;
-    private HttpStatus status;
+    private String message; // Message to be included in the API response
+    private boolean success; // Indicator of whether the operation was successful
+    private HttpStatus status; // HTTP status code of the response
 }

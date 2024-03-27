@@ -1,12 +1,15 @@
 package com.userservice.bank.exceptions;
 
-public class ResourceNotFoundException extends RuntimeException{
-    
-    public ResourceNotFoundException(){
-        super("Resources not found!");
+// Custom exception class to represent resource not found errors
+public class ResourceNotFoundException extends RuntimeException {
+
+    // Default constructor with a generic error message
+    public ResourceNotFoundException() {
+        super("Resource not found!");
     }
 
-    public ResourceNotFoundException(String message){
+    // Constructor with a custom error message
+    public ResourceNotFoundException(String message) {
         super(message);
     }
 }

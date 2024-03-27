@@ -3,7 +3,7 @@ package com.userservice.bank.entites;
 import java.util.List;
 
 import com.userservice.bank.entites.external.Account;
-import com.userservice.bank.entites.external.Transaction;
+// import com.userservice.bank.entites.external.Transaction;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -41,6 +41,6 @@ public class User {
     @Transient
     private List<Account> account;
 
-    @Transient
-    private List<Transaction> transaction;
+    // @Transient
+    // private List<Transaction> transaction;
 }

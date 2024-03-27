@@ -8,6 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,6 +28,8 @@ public class Transaction {
     @CreationTimestamp
     private LocalDateTime timestamp;
     private BigDecimal amount;
+    @NotBlank(message = "Transaction Type shouldn't be blank")
     private String transactionType;
+    @NotBlank(message = "Transaction Type shouldn't be blank")
     private String transactionStatus;
 }

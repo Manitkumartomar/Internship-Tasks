@@ -1,5 +1,7 @@
 package com.userservice.bank.entites.external;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,6 +19,6 @@ public class Account {
     private String accountType;
     private double availableBalance;
     private String accountStatus;
-    
+    private List<Transaction> transactions;
     
 }

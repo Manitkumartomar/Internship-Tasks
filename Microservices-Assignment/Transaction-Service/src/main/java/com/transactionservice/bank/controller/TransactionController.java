@@ -15,22 +15,27 @@ import org.springframework.web.bind.annotation.RestController;
 import com.transactionservice.bank.entities.Transaction;
 import com.transactionservice.bank.services.TransactionService;
 
+import jakarta.validation.Valid;
+
+// Controller class to handle transaction-related HTTP requests
 @RestController
 @RequestMapping("/transactions")
 public class TransactionController {
-    
-    @Autowired
-    private TransactionService transactionService;
 
-    @PostMapping
-    public ResponseEntity<Transaction> addTransaction(@RequestBody Transaction transaction){
-      Transaction transaction1 = transactionService.addTransaction(transaction);
-      return ResponseEntity.status(HttpStatus.CREATED).body(transaction1);
-    }
+  @Autowired
+  private TransactionService transactionService;
 
-    @GetMapping("/{accountId}")
-    public ResponseEntity<List<Transaction>> getTransaction(@PathVariable Long accountId){
-        List<Transaction> transactions = transactionService.getTransactions(accountId);
-        return ResponseEntity.ok(transactions);
-    }
+  // Endpoint to add a new transaction
+  @PostMapping
+  public ResponseEntity<Transaction> addTransaction(@RequestBody @Valid Transaction transaction) {
+    Transaction transaction1 = transactionService.addTransaction(transaction);
+    return ResponseEntity.status(HttpStatus.CREATED).body(transaction1);
+  }
+
+  // Endpoint to retrieve transactions associated with a given account ID
+  @GetMapping("/{accountId}")
+  public ResponseEntity<List<Transaction>> getTransaction(@PathVariable Long accountId) {
+    List<Transaction> transactions = transactionService.getTransactions(accountId);
+    return ResponseEntity.ok(transactions);
+  }
 }

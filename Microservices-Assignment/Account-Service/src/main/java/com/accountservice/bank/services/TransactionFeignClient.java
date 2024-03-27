@@ -8,9 +8,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.accountservice.bank.entities.external.Transaction;
 
-@FeignClient(name = "TRANSACTION-SERVICE")
+// Feign client interface for interacting with the TRANSACTION-SERVICE
+@FeignClient(name = "TRANSACTION-SERVICE") // Specifies the name of the Feign client
 public interface TransactionFeignClient {
 
-    @GetMapping("/transactions/{accountId}")
-    List<Transaction> getTransactions(@PathVariable Long accountId); 
+    // Method to retrieve transactions associated with a given account ID
+    @GetMapping("/transactions/{accountId}") // Specifies the HTTP GET method and the endpoint
+    List<Transaction> getTransactions(@PathVariable Long accountId); // Defines the method signature with a parameter
+                                                                     // representing the account ID
 }
