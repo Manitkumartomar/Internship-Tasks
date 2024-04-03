@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "cd43",
+      "title": "To-Do-List-Updated",
+      "important": false,
+      "completed": false
+    },
+    {
+      "id": "5128",
+      "title": "Clean the window",
+      "completed": true,
+      "important": true
+    },
+    {
+      "id": "b693",
+      "title": "Hello ! This is another task"
+    },
+    {
+      "id": "4bf9",
+      "title": "Task is to manage the aside",
+      "important": true
+    },
+    {
+      "id": "a537",
+      "title": "Hi! It's your time.",
+      "completed": true,
+      "important": true
+    },
+    {
+      "id": "abe2",
+      "title": "Mop the floor",
+      "completed": true
+    }
+  ]
+}

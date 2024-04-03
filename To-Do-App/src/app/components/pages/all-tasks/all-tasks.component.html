@@ -1,0 +1,31 @@
+<app-page-title></app-page-title>
+<div class="flex mt-6">
+  <div>
+    <input
+      type="text"
+      class="h-10 px-4 py-2 rounded shadow"
+      placeholder="Type your task here..."
+      [formControl]="task"
+    />
+    <p class="text-red-500 pt-3" [hidden]="task.valid || task.untouched">
+      Required field!!
+    </p> <br> <br>
+    <button
+      class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ..."
+      [disabled]="submitBtn.invalid"
+      (click)="addTask()"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+
+<div class="flex flex-col mt-6">
+  <app-task-list
+    [taskList]="taskList"
+    (edit)="onEdit($event)"
+    (completed)="onComplete($event)"
+    (important)="onImportant($event)"
+    (deleted)="onDeleted($event)"
+  ></app-task-list>
+</div>
