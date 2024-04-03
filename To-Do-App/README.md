@@ -55,6 +55,28 @@ Open your web browser and visit http://localhost:4200/ to view the app.
 - To mark a task as important, click on star icon next to the task
 - To mark a task as completed, click on the checkbox next to the task.
 - To delete a task, click on the delete icon next to the task.
+
+<h2 align="center">📸 Screenshots</h2>
+
+- Screenshot 1: 
+
+![Screenshot 1](/Internship-Tasks/To-Do-App/src/assets/1.png)
+- Screenshot 2: 
+
+![Screenshot 2](/Internship-Tasks/To-Do-App/src/assets/2.png)
+- Screenshot 3: 
+
+![Screenshot 3](/Internship-Tasks/To-Do-App/src/assets/3.png)
+- Screenshot 4: 
+
+![Screenshot 4](/Internship-Tasks/To-Do-App/src/assets/4.png)
+- Screenshot 5: 
+
+![Screenshot 5](/Internship-Tasks/To-Do-App/src/assets/5.png)
+- Screenshot 6: 
+
+![Screenshot 6](/Internship-Tasks/To-Do-App/src/assets/6.png)
+
 <h2 align="center">🤝 Contributing</h2>
 Contributions are welcome! If you encounter any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
