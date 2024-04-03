@@ -60,10 +60,10 @@ Open your web browser and visit http://localhost:4200/ to view the app.
 
 - Screenshot 1: 
 
-![Screenshot 1](/Internship-Tasks/To-Do-App/src/assets/1.png)
+![Screenshot 1](/To-Do-App/src/assets/1.png)
 - Screenshot 2: 
 
-![Screenshot 2](/Internship-Tasks/To-Do-App/src/assets/2.png)
+![Screenshot 2](/To-Do-App/src/assets/2.png)
 - Screenshot 3: 
 
 ![Screenshot 3](/Internship-Tasks/To-Do-App/src/assets/3.png)
