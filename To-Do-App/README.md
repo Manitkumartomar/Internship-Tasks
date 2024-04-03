@@ -1,27 +1,65 @@
-# Practice1
+<h1 align="center">📋 To-Do-App 📋</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+<p>📋 This is a simple ToDoList application built with Angular. It allows users to create, edit, mark as completed,
+mark as important and delete tasks.</p>
 
-## Development server
+<h2 align="center">💎 Features</h2>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- 📝 Add new tasks
+- ✏️ Edit existing tasks
+- ✅ Mark tasks as completed
+- ⭐ Mark tasks as important
+- 🗑️ Delete tasks
+- 🎨 Simple and intuitive user interface
 
-## Code scaffolding
+<h2 align="center">🚀 Getting Started</h2>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To get started with the ToDoList app, follow these steps:
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Make sure you have the following software installed on your machine:
 
-## Running unit tests
+- Node.js: [Download](https://nodejs.org/)
+- npm (Node Package Manager): npm is included with Node.js installation.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+Clone the repository to your local machine:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+git clone https://github.com/yourusername/todo-list-angular.git 
+```
+Navigate to the project directory:
 
-## Further help
+```bash
+cd todo-list-angular
+```
+Install dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install
+```
+### Running the App
+
+Once the dependencies are installed, you can run the app locally using the Angular CLI.
+
+Start the development server:
+```bash
+ng serve
+```
+Open your web browser and visit http://localhost:4200/ to view the app.
+### Usage
+- To add a new task, click on the "Add Task" button and enter the task details.
+- To edit an existing task, click on the edit icon next to the task and modify the task details.
+- To mark a task as important, click on star icon next to the task
+- To mark a task as completed, click on the checkbox next to the task.
+- To delete a task, click on the delete icon next to the task.
+<h2 align="center">🤝 Contributing</h2>
+Contributions are welcome! If you encounter any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+
+1. Fork the repository
+2. Create your feature branch (git checkout -b feature/your-feature-name)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin feature/your-feature-name)
+5. Create a new Pull Request
