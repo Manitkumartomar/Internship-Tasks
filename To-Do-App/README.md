@@ -66,16 +66,16 @@ Open your web browser and visit http://localhost:4200/ to view the app.
 ![Screenshot 2](/To-Do-App/src/assets/2.png)
 - Screenshot 3: 
 
-![Screenshot 3](/Internship-Tasks/To-Do-App/src/assets/3.png)
+![Screenshot 3](/To-Do-App/src/assets/3.png)
 - Screenshot 4: 
 
-![Screenshot 4](/Internship-Tasks/To-Do-App/src/assets/4.png)
+![Screenshot 4](/To-Do-App/src/assets/4.png)
 - Screenshot 5: 
 
-![Screenshot 5](/Internship-Tasks/To-Do-App/src/assets/5.png)
+![Screenshot 5](/To-Do-App/src/assets/5.png)
 - Screenshot 6: 
 
-![Screenshot 6](/Internship-Tasks/To-Do-App/src/assets/6.png)
+![Screenshot 6](/To-Do-App/src/assets/6.png)
 
 <h2 align="center">🤝 Contributing</h2>
 Contributions are welcome! If you encounter any bugs or have suggestions for improvements, please open an issue or submit a pull request.
