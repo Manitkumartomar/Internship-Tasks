@@ -1,0 +1,137 @@
+<div class="flex justify-center h-screen overflow-hidden">
+  <div class="container">
+    <div class="cover" [ngClass]="{ 'rotate-active': isRegister }">
+      <div class="front">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJ8tJoF81mi2VmdvV2l7DIv-Pv5AtGR0GdA&usqp=CAU"
+          alt=""
+        />
+        <div class="text">
+          <span class="text-1">Don't Believe Everything You Think!</span>
+          <span>“There is no friend as loyal as a book.”</span>
+        </div>
+      </div>
+      <div class="back">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4E87iSHNTyk78Qtn2sDgVXWO1mdLX0kyZkA&usqp=CAU"
+          alt=""
+        />
+        <div class="text">
+          <span class="text-2"
+            >“The reading of all good books is like conversation with the finest
+            (people) of the past centuries.”</span
+          >
+          <span class="text-3">“Books are important for the mind, heart, and soul.”</span>
+        </div>
+      </div>
+    </div>
+    <div class="form h-full">
+      <div class="form-content h-full">
+        <div class="login-form">
+          <h1 class="text-lg text-center font-bold pb-8">Sign Up</h1>
+          <form (ngSubmit)="handleRegister()" [formGroup]="registerForm">
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Full Name</mat-label>
+                <input
+                  matInput
+                  placeholder="Enter Full Name"
+                  formControlName="username"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Email</mat-label>
+                <input
+                  matInput
+                  placeholder="Enter email"
+                  formControlName="email"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Password</mat-label>
+                <input
+                  matInput
+                  placeholder="Enter Password"
+                  formControlName="password"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Role</mat-label>
+                <input
+                  matInput
+                  placeholder="Enter User Role"
+                  formControlName="role"
+                />
+              </mat-form-field>
+            </div>
+            <button
+              class="w-full"
+              mat-flat-button
+              color="primary"
+              type="submit"
+            >
+              Register
+            </button>
+          </form>
+          <div>
+            Already have an account?
+            <button (click)="togglePanel()" mat-button color="primary">
+              Login
+            </button>
+          </div>
+        </div>
+
+        <div class="signup-form">
+          <h1 class="text-lg text-center font-bold pb-8">Log in</h1>
+          <form (ngSubmit)="handleLogin()" [formGroup]="loginForm">
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Username</mat-label>
+                <input
+                  matInput
+                  placeholder="Enter Username"
+                  formControlName="username"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Password</mat-label>
+                <input
+                  matInput
+                  placeholder="Enter Password"
+                  formControlName="password"
+                />
+              </mat-form-field>
+            </div>
+
+            <button
+              class="w-full"
+              mat-flat-button
+              color="primary"
+              type="submit"
+            >
+              Login
+            </button>
+          </form>
+          <div>
+            Don't have account?
+            <button (click)="togglePanel()" mat-button color="primary">
+              Signup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

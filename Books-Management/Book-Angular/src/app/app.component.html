@@ -1,0 +1,11 @@
+<!-- <router-outlet /> -->
+<div>
+  <div>
+    <app-navbar/>
+    @if (user) {<app-home/>}
+    @else { <app-auth/>}
+
+  </div>
+
+  <app-footer/>
+</div>

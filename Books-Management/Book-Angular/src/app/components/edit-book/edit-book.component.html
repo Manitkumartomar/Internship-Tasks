@@ -1,0 +1,38 @@
+<h1 class="text-center p-4">Update Book Id: {{books.id}}</h1>
+<form class="w-[27rem] p-6 rounded-lg shadow-md">
+  <div class="mb-4">
+    <mat-form-field class="w-full">
+      <mat-label>Update Image Url</mat-label>
+      <input matInput placeholder="Ex. Book Image" value="books.imgUrl" [(ngModel)]="books.imgUrl" name="first">
+    </mat-form-field>
+  </div>
+
+  <div class="mb-4">
+    <mat-form-field class="w-full">
+      <mat-label>Update Title</mat-label>
+      <input matInput placeholder="Ex. Book Title" value="books.title" [(ngModel)]="books.title" name="second">
+    </mat-form-field>
+  </div>
+
+  <div class="mb-4">
+    <mat-form-field class="w-full">
+      <mat-label>Update Author Name</mat-label>
+      <input matInput placeholder="Ex. Author Name" value="books.author" [(ngModel)]="books.author" name="third">
+    </mat-form-field>
+  </div>
+
+  <div class="mb-4">
+    <mat-form-field class="w-full">
+      <mat-label>Update Category</mat-label>
+      <input matInput placeholder="Ex. Book Category" value="books.category" [(ngModel)]="books.category" name="forth">
+    </mat-form-field>
+  </div>
+
+  <div class="mb-4">
+    <mat-radio-group [(ngModel)]="books.available" name="fifth">
+      <mat-radio-button value=true>Available</mat-radio-button>
+      <mat-radio-button value=false>Not Available</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <button mat-flat-button color="primary" (click)="onSubmit()">Submit</button>
+</form>

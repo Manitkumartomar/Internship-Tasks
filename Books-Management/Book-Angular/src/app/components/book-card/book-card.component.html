@@ -1,0 +1,53 @@
+<div class="card">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <img
+        mat-card-avatar
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJ8tJoF81mi2VmdvV2l7DIv-Pv5AtGR0GdA&usqp=CAU"
+        alt=""
+      />
+      <mat-card-title>Student Library</mat-card-title>
+      <mat-card-subtitle>Book-Store</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="p-6 h-72 w-64" [src]="book.imgUrl" alt="Book" />
+    <mat-card-content class="content">
+      <h4>Title: {{ book.title }}</h4>
+    </mat-card-content>
+    <mat-card-content>
+      <p>Author: {{ book.author }}</p>
+    </mat-card-content>
+    <mat-card-content>
+      <p>Category: {{ book.category }}</p>
+    </mat-card-content>
+    <mat-card-actions class="flex justify-between">
+      <div>
+        <button
+          (click)="onClickFavorite()"
+          mat-icon-button
+          aria-label="Example icon button with a favorite icon"
+          [ngClass]="{ favorited: isFavorited }"
+        >
+          <mat-icon>favorite</mat-icon>
+        </button>
+
+        <button
+          (click)="openEditBook()"
+          mat-icon-button
+          aria-label="Example icon button with an edit icon"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+      </div>
+      <div>
+        <button
+          (click)="handleDeleteBook()"
+          mat-icon-button
+          aria-label="Example icon button with a delete icon"
+          color="warn"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

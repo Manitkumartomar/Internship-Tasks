@@ -1,0 +1,22 @@
+.card {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.example-card {
+  max-width: 300px;
+  flex: 1 1 0;
+  background-color: black;
+}
+
+.content{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: unset;
+}
+
+.favorited {
+  color: red;
+}

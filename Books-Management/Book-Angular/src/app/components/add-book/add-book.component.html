@@ -1,0 +1,57 @@
+<form class="w-[27rem] p-6 rounded-lg shadow-md">
+  <div class="mb-4">
+    <mat-form-field class="w-full">
+      <mat-label>Add Image Url</mat-label>
+      <input
+        matInput
+        placeholder="Ex. Book Image"
+        [(ngModel)]="books.imgUrl"
+        name="first"
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="mb-4">
+    <mat-form-field class="w-full">
+      <mat-label>Add Title</mat-label>
+      <input
+        matInput
+        placeholder="Ex. Book Title"
+        [(ngModel)]="books.title"
+        name="second"
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="mb-4">
+    <mat-form-field class="w-full">
+      <mat-label>Add Author Name</mat-label>
+      <input
+        matInput
+        placeholder="Ex. Author Name"
+        [(ngModel)]="books.author"
+        name="third"
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="mb-4">
+    <mat-form-field class="w-full">
+      <mat-label>Add Category</mat-label>
+      <input
+        matInput
+        placeholder="Ex. Book Category"
+        [(ngModel)]="books.category"
+        name="forth"
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="mb-4">
+    <mat-radio-group [(ngModel)]="books.available" name="fifth">
+      <mat-radio-button value=true>Available</mat-radio-button>
+      <mat-radio-button value=false>Not Available</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <button mat-flat-button color="primary" (click)="onSubmit()">Add</button>
+</form>
